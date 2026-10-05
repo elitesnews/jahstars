@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELITES News | Latest News</title>
+<meta name="description" content="ELITES News - fast, reliable and engaging news.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">BREAKING NEWS: Welcome to ELITES — Your trusted source for the latest stories.</div>
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">ELITES<span>NEWS</span></a>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="nav">
+      <a href="index.html">Home</a><a href="#latest">Latest</a><a href="#kenya">Kenya</a>
+      <a href="#politics">Politics</a><a href="#business">Business</a>
+      <a href="#sports">Sports</a><a href="#entertainment">Entertainment</a>
+      <a href="#technology">Technology</a>
+    </nav>
+    <div class="search"><input id="searchInput" placeholder="Search news..." onkeyup="searchNews()"><button onclick="searchNews()">🔎</button></div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-main">
+    <div class="hero-image">ELITES</div>
+    <div class="hero-copy">
+      <span class="tag">TOP STORY</span>
+      <h1>ELITES brings you the stories shaping Kenya and the world</h1>
+      <p>Stay informed with breaking news, politics, business, sports, entertainment and technology.</p>
+      <a class="btn" href="article.html?id=1">Read full story →</a>
+    </div>
+  </div>
+  <aside class="trending">
+    <h2>Trending Now</h2>
+    <div class="trend"><b>01</b><span>What readers are talking about today</span></div>
+    <div class="trend"><b>02</b><span>New developments in Kenya</span></div>
+    <div class="trend"><b>03</b><span>Technology changing everyday life</span></div>
+    <div class="trend"><b>04</b><span>Latest sports updates</span></div>
+  </aside>
+</section>
+
+<section id="latest" class="section">
+  <div class="section-head"><h2>Latest News</h2><a href="#">View all →</a></div>
+  <div id="newsGrid" class="news-grid"></div>
+</section>
+
+<section id="kenya" class="section category"><div class="section-head"><h2>Kenya</h2></div><div id="kenyaGrid" class="news-grid"></div></section>
+<section id="politics" class="section category"><div class="section-head"><h2>Politics</h2></div><div id="politicsGrid" class="news-grid"></div></section>
+<section id="business" class="section category"><div class="section-head"><h2>Business</h2></div><div id="businessGrid" class="news-grid"></div></section>
+<section id="sports" class="section category"><div class="section-head"><h2>Sports</h2></div><div id="sportsGrid" class="news-grid"></div></section>
+<section id="entertainment" class="section category"><div class="section-head"><h2>Entertainment</h2></div><div id="entertainmentGrid" class="news-grid"></div></section>
+<section id="technology" class="section category"><div class="section-head"><h2>Technology</h2></div><div id="technologyGrid" class="news-grid"></div></section>
+
+<section class="newsletter">
+  <h2>Get ELITES News in your inbox</h2><p>Subscribe for important stories and breaking updates.</p>
+  <form onsubmit="subscribe(event)"><input type="email" id="email" required placeholder="Your email address"><button>Subscribe</button></form>
+  <small id="subscribeMsg"></small>
+</section>
+</main>
+
+<footer>
+  <div><a class="logo" href="#">ELITES<span>NEWS</span></a><p>Independent-style news presentation for learning and demonstration.</p></div>
+  <div><h3>Sections</h3><a href="#kenya">Kenya</a><a href="#politics">Politics</a><a href="#sports">Sports</a><a href="#technology">Technology</a></div>
+  <div><h3>Contact</h3><p>Email: info@elitesnews.example</p><p>© 2026 ELITES News</p></div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
